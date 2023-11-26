@@ -1,0 +1,81 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	height: 110px;
+	width: 100%;
+	z-index: 100;
+	border: 2px rgba(255, 255, 255, 0) solid;
+	background-color: rgba(0,0,0,0.75);
+	border-radius: 0 0 25px 25px;
+	position: fixed;
+	top: 0;
+
+}
+.logoimg{
+	margin-left: 2%;
+	margin-top: 1.2%;
+	width: 100px;
+	height: 100px;
+}
+.logo-imagem{
+	width: 80px;
+	height: 80px;
+}
+.listbox {
+	position: absolute;
+	display: flex;
+	height: 100px;
+	width: 100%;
+	justify-content: end;
+	align-items: center;
+	padding: 0px 2.5%;
+	z-index: 300;
+}
+
+.list {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.listitem {
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 50px;
+	margin: 0 10px;
+	border: 2px rgba(255, 255, 255, 0.5) solid;
+	transition: 0.25s ease-in-out;
+}
+
+
+.listitem:hover {
+	border: 2px #efb433 solid;
+	font-weight: 100;
+	transition: 0.25s ease-in-out;
+
+}
+
+.listfont:hover {
+	color: white;
+	transition: 0.5s ease-in-out;
+}
+
+.listfont {
+	font-size: 20px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 500;
+	transition: 0.5s ease-in-out;
+}
+
+.racingline {
+	position: relative;
+	margin: auto;
+	background-color: #efb433;
+}
+
+
+@media screen and (max-width: 600px) {
+
+}

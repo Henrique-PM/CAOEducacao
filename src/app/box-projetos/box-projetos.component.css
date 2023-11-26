@@ -1,0 +1,99 @@
+.content{
+	position: absolute;
+	left: 50%;top: 50%;
+	transform:translate(-50%, -50%);
+	width: 935px;
+	height:520px ;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 10px 10px 5px 0px #000000;
+	background-color: #000000;
+
+}
+.content .slide img{
+	height: 100%;
+	width: 100%;
+
+}
+
+.slides input{
+	display: none;
+}
+
+.slides{
+	display: flex;
+	/*depende das quantidaddes de fotos */
+	width: 200%;
+	height: 100%;
+}
+.slide{
+	/*divide 100% pela quantidade de imagem*/
+	width: 50%;
+	transition: 0.6s;
+}
+#programa-text{
+	background-color: rgb(50, 159, 152);
+
+}
+#programa-text > p{
+	margin:20px;
+	color:#fff;
+	margin-top: 150px;
+}
+#programa-text > a{
+	margin-left:350px;
+}
+.click{
+	background-color: rgb(255,215,0);
+	border-radius: 20px;
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+}
+#slide1:checked ~ .s1{
+	margin-left: 0;
+}
+#slide2:checked ~ .s1{
+	margin-left: -50%;
+}
+
+
+.navegation{
+    position: absolute;
+    bottom: 110px;
+    left: 680px;
+    display: flex;
+
+}
+
+
+.manual-btn{
+    width: 55px;
+    height: 25px;
+    border: 2px solid rgb(255, 196, 0);
+    margin: 8px;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.manual-btn:hover{
+    background-color: #ffffff;
+
+}
+
+@media screen and (max-width: 840px) {
+	.navegation{
+    position: absolute;
+    bottom: -210px;
+    left: 380px;
+    display: flex;
+
+}
+.content{
+	position: absolute;
+	left: 10%;top: 50%;
+	margin-right:200px;;
+	transform:none;
+}
+
+}
